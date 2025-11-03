@@ -39,6 +39,7 @@ export default function Navbar() {
           <li><a href="#projects" className="hover:text-primary transition-colors duration-300" onClick={(e) => handleSmoothScroll(e, 'projetos')}>Projetos</a></li>
           <li><a href="#sobre" className="hover:text-primary transition-colors duration-300" onClick={(e) => handleSmoothScroll(e, 'sobre')}>Sobre</a></li>
           <li><a href="#experiencia" className="hover:text-primary transition-colors duration-300" onClick={(e) => handleSmoothScroll(e, 'experiencia')}>Experiências</a></li>
+          <li><a href="#meugitub" className="hover:text-primary transition-colors duration-300" onClick={(e) => handleSmoothScroll(e, 'github')}>Meu Github</a></li>
           <li><a href="#contact" className="hover:text-primary transition-colors duration-300" onClick={(e) => handleSmoothScroll(e, 'contact')}>Contato</a></li>
         </ul>
 
@@ -86,6 +87,15 @@ export default function Navbar() {
                 onClick={(e) => handleSmoothScroll(e, 'experiencia')}
                   >
                     Experiências
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#github" 
+                  className="block py-3 hover:text-gray-400 transition-colors duration-300 border-b border-border" 
+                  onClick={(e) => handleSmoothScroll(e, 'github')}
+                >
+                  Meu GitHub
                 </a>
               </li>
               <li>

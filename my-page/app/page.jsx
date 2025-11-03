@@ -4,6 +4,8 @@ import Header from "@/components/Header";
 import Sobre from "@/components/AboutMe";
 import Experiencias from "@/components/Experiencias"
 import Contact from "@/components/Contact";
+import Profile from "@/components/GithubProfile";
+import Repositories from "@/components/GithubRepos";
 
 export default function Home() {
   return (
@@ -88,7 +90,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="cursor-pointer"
               >
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">Alerta Urbano</h3>
+              <h3 className="font-semibold text-white mb-2">Alerta Urbano</h3>
               <p className="text-gray-300 leading-relaxed mb-2">Desenvolvi, junto com colegas, uma aplicação web e mobile que permite aos cidadãos reportarem problemas urbanos 
                 como buracos nas ruas, lixo acumulado, enchentes e árvores caídas. A plataforma integra 
                 um mapa interativo onde os usuários visualizam incidentes reportados em tempo real e 
@@ -113,6 +115,28 @@ export default function Home() {
       <Sobre />
 
       <Experiencias />
+
+      <section id="github" className="py-12 lg:py-20 px-4 sm:px-6 bg-gray-800">
+        <div className="container mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-white mb-8">
+            Meu GitHub
+          </h2>
+          <p className="text-gray-400 text-center mb-12 text-base sm:text-lg">
+            Dados em tempo real do meu perfil e repositórios
+          </p>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Perfil do GitHub */}
+            <div className="lg:col-span-1">
+              <Profile />
+            </div>
+
+            <div className="lg:col-span-2">
+              <Repositories />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <Contact />
 

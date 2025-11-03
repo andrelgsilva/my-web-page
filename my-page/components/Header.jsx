@@ -30,7 +30,8 @@ export default function Header() {
           </button>
           
           <a 
-            href="https://github.com/andrelgsilva" 
+            href="#github" 
+            onClick={(e) => handleSmoothScroll(e, 'github')}
             target="_blank"
             rel="noopener noreferrer"
             className="border-2 border-green-400 text-green-400 px-6 py-3 rounded-lg font-bold hover:bg-green-400 hover:text-black transition-all duration-300 transform hover:scale-105 cursor-pointer w-full sm:w-auto text-sm md:text-base text-center"

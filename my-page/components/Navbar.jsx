@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <header className="w-full border-b border-border bg-background/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4">
-        <h1 className="text-lg font-semibold tracking-tight text-primary">
+        <h1 className="text-lg font-semibold tracking-tight text-primary select-none cursor-default">
           André Gomes
         </h1>
 

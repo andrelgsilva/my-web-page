@@ -11,7 +11,7 @@ export default function Sobre() {
         </h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
-          {/* Coluna da foto */}
+          {/* foto */}
           <div className="flex justify-center"> 
             {/* colocando a foto centralizada */}
             <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80">
@@ -25,7 +25,6 @@ export default function Sobre() {
             </div>
           </div>
           
-          {/* Coluna do texto */}
           <div className="text-gray-300">
             <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4 text-center lg:text-left">
               André Gomes
@@ -48,6 +47,23 @@ export default function Sobre() {
               as melhores práticas de desenvolvimento.
             </p>
             
+            <div className="bg-gray-700/50 rounded-lg p-6 border border-blue-500/20">
+                <h3 className="font-semibold text-white mb-4 text-lg">Tecnologias deste Portfólio</h3>
+                <p className="text-gray-300 text-sm mb-4 leading-relaxed">
+                  Este portfólio foi desenvolvido com <strong>Next.js 14</strong> e <strong>React 18</strong>, 
+                  utilizando <strong>Tailwind CSS</strong> para uma interface responsiva. Integrei a 
+                  <strong> GitHub REST API</strong> para exibir dados dinâmicos em tempo real, demonstrando 
+                  habilidades em consumo de APIs e desenvolvimento front-end moderno.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded text-xs">Next.js 14</span>
+                  <span className="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded text-xs">React 18</span>
+                  <span className="bg-teal-500/20 text-teal-400 px-3 py-1 rounded text-xs">Tailwind CSS</span>
+                  <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded text-xs">GitHub API</span>
+                  <span className="bg-purple-500/20 text-purple-400 px-3 py-1 rounded text-xs">Responsive Design</span>
+                </div>
+              </div>
+
             <div className="mb-4 sm:mb-6">
               <h4 className="text-base sm:text-lg font-semibold text-white mb-2 sm:mb-3 text-center lg:text-left">Tecnologias:</h4>
               <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
